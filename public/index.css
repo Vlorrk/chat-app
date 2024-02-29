@@ -1,0 +1,94 @@
+body {
+  background-color: lavender;
+  margin: 10 px;
+  font-family: "Helvetica Neue", Helvetica,sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#chat-container {
+  position: relative;
+  top: 50px;
+  background-color: #121212;
+  border-radius: 25px;
+  overflow:auto;
+  width: 25%;
+  height: 25%;
+}
+
+#list {
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+overflow: auto;
+width: 350px;;
+height: 600px;
+margin: 0 auto;
+padding: 10px;
+list-style: none;
+position: relative;
+}
+
+#list::-webkit-scrollbar{
+width: 0.5em;
+}
+
+#list::-webkit-scrollbar-thumb{
+  background-color: #121212;
+}
+
+.sent-by-me {
+  align-self:flex-end;
+  color: white;
+  max-width: 255px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  line-height: 24px;
+  border-radius: 25px;
+  background-color: #0b93f6;
+  word-wrap: break-word; 
+  
+}
+
+.sent-by-others {
+  align-self: flex-start;
+  color: black;
+  max-width: 255px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  line-height: 24px;
+  word-wrap: break-word;
+  border-radius: 25px;
+  background-color: #e5e5ea; 
+}
+#form {
+  display: flex;
+  padding: 0.25rem;
+  height: 3rem;
+  box-sizing: border-box;
+}
+#input {
+  width: 80%;
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+}
+#input:focus {
+  outline: none;
+}
+#form > button {
+  background: lightblue;
+  border: none;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  border-radius: 25px;
+  outline: none;
+  color: black;
+}
+
