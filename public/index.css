@@ -1,5 +1,5 @@
 body {
-  background-color: lavender;
+  background-color: #a8b1db;
   margin: 10 px;
   font-family: "Helvetica Neue", Helvetica,sans-serif;
   font-size: 20px;
@@ -16,8 +16,7 @@ body {
   background-color: #121212;
   border-radius: 25px;
   overflow:auto;
-  width: 25%;
-  height: 25%;
+  border: solid 10px white;
 }
 
 #list {
@@ -46,7 +45,7 @@ width: 0.5em;
   color: white;
   max-width: 255px;
   margin-bottom: 15px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   line-height: 24px;
   border-radius: 25px;
   background-color: #0b93f6;
@@ -59,7 +58,7 @@ width: 0.5em;
   color: black;
   max-width: 255px;
   margin-bottom: 15px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   line-height: 24px;
   word-wrap: break-word;
   border-radius: 25px;
@@ -82,7 +81,8 @@ width: 0.5em;
 #input:focus {
   outline: none;
 }
-#form > button {
+#send {
+  display:none;
   background: lightblue;
   border: none;
   padding: 0 1rem;
@@ -91,4 +91,6 @@ width: 0.5em;
   outline: none;
   color: black;
 }
-
+#input:valid + #send {
+display: block;
+}
