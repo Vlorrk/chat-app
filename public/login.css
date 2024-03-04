@@ -1,8 +1,67 @@
 body { 
-  display: flex;
   background-color: #a8b1db;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 500px;
+  margin: 0;
+}
+
+.limiter {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ height: 100vh;
+}
+.wrap {
+  width:500px;
+  background: #fff;
+  border-radius: 10px;
+  overflow:hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between ;
+  padding: 50px;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+.formtitle {
+  font-family:"Poppins";
+  font-size: 24px;
+  color: #333;
+  text-align:center;
+  font-weight: 700;
+}
+
+#username {
+font-family: "Poppins";
+font-size: 15px;
+display: block;
+color: #666;
+height: 50px;
+border-radius: 25px;
+border: none;
+text-align: center;
+margin: 15px;
+background: #E6E6E6;
+}
+
+#username:focus {
+outline: none;}
+
+
+button {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background-color:#57b846;
+  padding: 0 25px;
+  
+  transition: all .4s;
 }
